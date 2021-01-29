@@ -6,9 +6,9 @@ public class Teachers {
 	private static int c1 = 0;
 	private static int c2 = 0;
 	private static int c3 = 0;
-	private int teachers_id; /* 4000-4999*/ /*Ως 4300 δημοτικό, ως 4700 γυμνάσιο, ως 4999 λύκειο*/
+	private int teachers_id; /* 4000-4999*/ /*Ξ©Ο‚ 4300 Ξ΄Ξ·ΞΌΞΏΟ„ΞΉΞΊΟ, Ο‰Ο‚ 4700 Ξ³Ο…ΞΌΞ½Ξ¬ΟƒΞΉΞΏ, Ο‰Ο‚ 4999 Ξ»ΟΞΊΞµΞΉΞΏ*/
 	private String name;
-	private int classes; /* από 0 έως 5 είναι οι τάξεις του δημοτικού */
+	private int classes; /* Ξ±Ο€Ο 0 Ξ­Ο‰Ο‚ 5 ΞµΞ―Ξ½Ξ±ΞΉ ΞΏΞΉ Ο„Ξ¬ΞΎΞµΞΉΟ‚ Ο„ΞΏΟ… Ξ΄Ξ·ΞΌΞΏΟ„ΞΉΞΊΞΏΟ */
 	private boolean covid_status;
 	private static boolean start = false;
 
@@ -25,10 +25,10 @@ public class Teachers {
 				elementary_teachers[c1] = this;
 				c1++;
 				if (start == false) {
-					System.out.println("Η εισαγωγή του καθηγητή έγινε επιτυχώς.");
+					System.out.println("Ξ— ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® Ο„ΞΏΟ… ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ® Ξ­Ξ³ΞΉΞ½Ξµ ΞµΟ€ΞΉΟ„Ο…Ο‡ΟΟ‚.");
 				}
 			} else {
-				System.out.println("Δεν υπάρχει άλλη χωρητικότητα για καθηγητές δημοτικού.");
+				System.out.println("Ξ”ΞµΞ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ Ξ¬Ξ»Ξ»Ξ· Ο‡Ο‰ΟΞ·Ο„ΞΉΞΊΟΟ„Ξ·Ο„Ξ± Ξ³ΞΉΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ­Ο‚ Ξ΄Ξ·ΞΌΞΏΟ„ΞΉΞΊΞΏΟ.");
 			}
 		} else if (type == 2) {
 			if (c2 < 10 ) {
@@ -39,10 +39,10 @@ public class Teachers {
 				middle_teachers[c2] = this;
 				c2++;
 				if (start == false) {
-					System.out.println("Η εισαγωγή του καθηγητή έγινε επιτυχώς.");
+					System.out.println("Ξ— ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® Ο„ΞΏΟ… ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ® Ξ­Ξ³ΞΉΞ½Ξµ ΞµΟ€ΞΉΟ„Ο…Ο‡ΟΟ‚.");
 				}
 			} else {
-				System.out.println("Δεν υπάρχει άλλη χωρητικότητα για καθηγητές γυμνασίου.");
+				System.out.println("Ξ”ΞµΞ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ Ξ¬Ξ»Ξ»Ξ· Ο‡Ο‰ΟΞ·Ο„ΞΉΞΊΟΟ„Ξ·Ο„Ξ± Ξ³ΞΉΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ­Ο‚ Ξ³Ο…ΞΌΞ½Ξ±ΟƒΞ―ΞΏΟ….");
 			}
 		} else {
 			if (c3 < 10 ) {
@@ -53,28 +53,28 @@ public class Teachers {
 			high_teachers[c3] = this;
 			c3++;
 			if (start == false) {
-				System.out.println("Η εισαγωγή του καθηγητή έγινε επιτυχώς.");
+				System.out.println("Ξ— ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® Ο„ΞΏΟ… ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ® Ξ­Ξ³ΞΉΞ½Ξµ ΞµΟ€ΞΉΟ„Ο…Ο‡ΟΟ‚.");
 			}
 		    } else {
-			System.out.println("Δεν υπάρχει άλλη χωρητικότητα για καθηγητές λυκείου.");
+			System.out.println("Ξ”ΞµΞ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ Ξ¬Ξ»Ξ»Ξ· Ο‡Ο‰ΟΞ·Ο„ΞΉΞΊΟΟ„Ξ·Ο„Ξ± Ξ³ΞΉΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ­Ο‚ Ξ»Ο…ΞΊΞµΞ―ΞΏΟ….");
 		    }
 	    }	
 	}
 	
 	public void create() {
 		start = true;
-		Teachers teacher1 = new Teachers(1, "Φωτεινή Θεοδωροπούλου", 0);
-		Teachers teacher2 = new Teachers(1, "Πέτρος Αρβανιτάκης", 1);
-		Teachers teacher3 = new Teachers(1, "Ρενάτα Τσαλδάρη", 2);
-		Teachers teacher4 = new Teachers(1, "Φάιη Αντωνοπούλου", 3);
-		Teachers teacher5 = new Teachers(1, "Λίνα Λινοπούλου", 4);
-		Teachers teacher6 = new Teachers(1, "Λίτσα Πατέρα", 5);
-		Teachers teacher7 = new Teachers(2, "Αθηνά Κατσαρού", -1);
-		Teachers teacher8 = new Teachers(2, "Αριστέα Μπουλουξή", -1);
-		Teachers teacher9 = new Teachers(2, "Σοφία Γεωργιάδου", -1);
-		Teachers teacher10 = new Teachers(3, "Μαρία Ντόβα", -1);
-		Teachers teacher11 = new Teachers(3, "Γρηγορία Σωτηροπούλου", -1);
-		Teachers teacher12 = new Teachers(3, "Σπύρος Καρδαμίτσης", -1);
+		Teachers teacher1 = new Teachers(1, "Ξ¦Ο‰Ο„ΞµΞΉΞ½Ξ® ΞΞµΞΏΞ΄Ο‰ΟΞΏΟ€ΞΏΟΞ»ΞΏΟ…", 0);
+		Teachers teacher2 = new Teachers(1, "Ξ Ξ­Ο„ΟΞΏΟ‚ Ξ‘ΟΞ²Ξ±Ξ½ΞΉΟ„Ξ¬ΞΊΞ·Ο‚", 1);
+		Teachers teacher3 = new Teachers(1, "Ξ΅ΞµΞ½Ξ¬Ο„Ξ± Ξ¤ΟƒΞ±Ξ»Ξ΄Ξ¬ΟΞ·", 2);
+		Teachers teacher4 = new Teachers(1, "Ξ¦Ξ¬ΞΉΞ· Ξ‘Ξ½Ο„Ο‰Ξ½ΞΏΟ€ΞΏΟΞ»ΞΏΟ…", 3);
+		Teachers teacher5 = new Teachers(1, "Ξ›Ξ―Ξ½Ξ± Ξ›ΞΉΞ½ΞΏΟ€ΞΏΟΞ»ΞΏΟ…", 4);
+		Teachers teacher6 = new Teachers(1, "Ξ›Ξ―Ο„ΟƒΞ± Ξ Ξ±Ο„Ξ­ΟΞ±", 5);
+		Teachers teacher7 = new Teachers(2, "Ξ‘ΞΈΞ·Ξ½Ξ¬ ΞΞ±Ο„ΟƒΞ±ΟΞΏΟ", -1);
+		Teachers teacher8 = new Teachers(2, "Ξ‘ΟΞΉΟƒΟ„Ξ­Ξ± ΞΟ€ΞΏΟ…Ξ»ΞΏΟ…ΞΎΞ®", -1);
+		Teachers teacher9 = new Teachers(2, "Ξ£ΞΏΟ†Ξ―Ξ± Ξ“ΞµΟ‰ΟΞ³ΞΉΞ¬Ξ΄ΞΏΟ…", -1);
+		Teachers teacher10 = new Teachers(3, "ΞΞ±ΟΞ―Ξ± ΞΟ„ΟΞ²Ξ±", -1);
+		Teachers teacher11 = new Teachers(3, "Ξ“ΟΞ·Ξ³ΞΏΟΞ―Ξ± Ξ£Ο‰Ο„Ξ·ΟΞΏΟ€ΞΏΟΞ»ΞΏΟ…", -1);
+		Teachers teacher12 = new Teachers(3, "Ξ£Ο€ΟΟΞΏΟ‚ ΞΞ±ΟΞ΄Ξ±ΞΌΞ―Ο„ΟƒΞ·Ο‚", -1);
 		start = false;
 	}
 
@@ -94,14 +94,14 @@ public class Teachers {
 			if (flag == true) {
 				if (mode == 5) {
 					if (elementary_teachers[keep].getCovidStatus() == true) {
-						System.out.println("Είναι ήδη θετικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· ΞΈΞµΟ„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
 						elementary_teachers[keep].setCovidStatus(true);
 						new Elementary().covidChangeTeachers(true, elementary_teachers[keep].getClasses());
 					}
 				} else {
 					if (elementary_teachers[keep].getCovidStatus() == false) {
-						System.out.println("Είναι ήδη αρνητικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· Ξ±ΟΞ½Ξ·Ο„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
 						elementary_teachers[keep].setCovidStatus(false);
 						new Elementary().covidChangeTeachers(false, elementary_teachers[keep].getClasses());
@@ -121,14 +121,14 @@ public class Teachers {
 			if (flag == true) {
 				if (mode == 5) {
 					if (middle_teachers[keep].getCovidStatus() == true) {
-						System.out.println("Είναι ήδη θετικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· ΞΈΞµΟ„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
 						middle_teachers[keep].setCovidStatus(true);
 						new Middle().covidChangeTeachers(true);
 					}
 				} else {
 					if (middle_teachers[keep].getCovidStatus() == false) {
-						System.out.println("Είναι ήδη αρνητικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· Ξ±ΟΞ½Ξ·Ο„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
 						middle_teachers[keep].setCovidStatus(false);
 						new Middle().covidChangeTeachers(false);
@@ -148,16 +148,16 @@ public class Teachers {
 			if (flag == true) {
 				if (mode == 5) {
 					if (high_teachers[keep].getCovidStatus() == true) {
-						System.out.println("Είναι ήδη θετικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· ΞΈΞµΟ„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
 						high_teachers[keep].setCovidStatus(true);
 						new High().covidChangeTeachers(true);
 					}
 				} else {
 					if (high_teachers[keep].getCovidStatus() == false) {
-						System.out.println("Είναι ήδη αρνητικός ο καθηγητής.");
+						System.out.println("Ξ•Ξ―Ξ½Ξ±ΞΉ Ξ®Ξ΄Ξ· Ξ±ΟΞ½Ξ·Ο„ΞΉΞΊΟΟ‚ ΞΏ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚.");
 					} else {
-						System.out.println("Καλησπέρα");
+						System.out.println("ΞΞ±Ξ»Ξ·ΟƒΟ€Ξ­ΟΞ±");
 						high_teachers[keep].setCovidStatus(false);
 						new High().covidChangeTeachers(false);
 					}
@@ -165,8 +165,8 @@ public class Teachers {
 			}	
 		}
 		if (flag == false) {
-			System.out.println("Δεν υπάρχει καθηγητής με τέτοιο ID.");
-			System.out.println("Οι καθηγητές είναι:");
+			System.out.println("Ξ”ΞµΞ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®Ο‚ ΞΌΞµ Ο„Ξ­Ο„ΞΏΞΉΞΏ ID.");
+			System.out.println("ΞΞΉ ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ­Ο‚ ΞµΞ―Ξ½Ξ±ΞΉ:");
 			display();
 		}
 	}
@@ -175,38 +175,38 @@ public class Teachers {
 		int e = 0;
 		for(int i = 0; i < elementary_teachers.length; i++) {
 			if(elementary_teachers[i] != null) {
-				System.out.println("Όνομα καθηγητή: " + elementary_teachers[i].getName());
-				System.out.println("ID καθηγητή: " + elementary_teachers[i].getTeachersID() + " Τάξεις δημοτικού που διδάσκει: " + (elementary_teachers[i].getClasses() + 1) + " Covid Status: " + elementary_teachers[i].getCovidStatus());
+				System.out.println("ΞΞ½ΞΏΞΌΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®: " + elementary_teachers[i].getName());
+				System.out.println("ID ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®: " + elementary_teachers[i].getTeachersID() + " Ξ¤Ξ¬ΞΎΞµΞΉΟ‚ Ξ΄Ξ·ΞΌΞΏΟ„ΞΉΞΊΞΏΟ Ο€ΞΏΟ… Ξ΄ΞΉΞ΄Ξ¬ΟƒΞΊΞµΞΉ: " + (elementary_teachers[i].getClasses() + 1) + " Covid Status: " + elementary_teachers[i].getCovidStatus());
 			} else {
 				e++;
 			}
 		}
 		if (e <= 6 && e >= 1) {
-			System.out.println("Το δημοτικό έχει πληρότητα καθηγητών");
+			System.out.println("Ξ¤ΞΏ Ξ΄Ξ·ΞΌΞΏΟ„ΞΉΞΊΟ Ξ­Ο‡ΞµΞΉ Ο€Ξ»Ξ·ΟΟΟ„Ξ·Ο„Ξ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„ΟΞ½");
 		}
 		int m = 0;
 		for (int i = 0; i < middle_teachers.length; i++) {
 			if (middle_teachers[i] == null) {
 				m++;
 			} else {
-				System.out.println("Όνομα καθηγητή: " + middle_teachers[i].getName());
-				System.out.println("ID καθηγητή: " + middle_teachers[i].getTeachersID() + " Τάξεις γυμνασίου που διδάσκει: Σε όλες" + " Covid Status: " + middle_teachers[i].getCovidStatus());
+				System.out.println("ΞΞ½ΞΏΞΌΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®: " + middle_teachers[i].getName());
+				System.out.println("ID ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®: " + middle_teachers[i].getTeachersID() + " Ξ¤Ξ¬ΞΎΞµΞΉΟ‚ Ξ³Ο…ΞΌΞ½Ξ±ΟƒΞ―ΞΏΟ… Ο€ΞΏΟ… Ξ΄ΞΉΞ΄Ξ¬ΟƒΞΊΞµΞΉ: Ξ£Ξµ ΟΞ»ΞµΟ‚" + " Covid Status: " + middle_teachers[i].getCovidStatus());
 			}
 		}
 		if (m > 0) {
-			System.out.println("Το γυμνάσιο έχει πληρότητα καθηγητών");
+			System.out.println("Ξ¤ΞΏ Ξ³Ο…ΞΌΞ½Ξ¬ΟƒΞΉΞΏ Ξ­Ο‡ΞµΞΉ Ο€Ξ»Ξ·ΟΟΟ„Ξ·Ο„Ξ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„ΟΞ½");
 		}
 		int h = 0;
 		for (int i = 0; i < high_teachers.length; i++) {
 			if (high_teachers[i] == null) {
 				h++;
 			} else {
-				System.out.println("Όνομα καθηγητή: " + high_teachers[i].getName());
-				System.out.println("ID καθηγητή: " + high_teachers[i].getTeachersID() + " Τάξεις λυκείου που διδάσκει: Σε όλες" + " Covid Status: " + high_teachers[i].getCovidStatus());
+				System.out.println("ΞΞ½ΞΏΞΌΞ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®: " + high_teachers[i].getName());
+				System.out.println("ID ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„Ξ®:: " + high_teachers[i].getTeachersID() + " Ξ¤Ξ¬ΞΎΞµΞΉΟ‚ Ξ»Ο…ΞΊΞµΞ―ΞΏΟ… Ο€ΞΏΟ… Ξ΄ΞΉΞ΄Ξ¬ΟƒΞΊΞµΞΉ: Ξ£Ξµ ΟΞ»ΞµΟ‚" + " Covid Status: " + high_teachers[i].getCovidStatus());
 			}
 		}
 		if (h > 0) {
-			System.out.println("Το λύκειο έχει πληρότητα καθηγητών");
+			System.out.println("Ξ¤ΞΏ Ξ»ΟΞΊΞµΞΉΞΏ Ξ­Ο‡ΞµΞΉ Ο€Ξ»Ξ·ΟΟΟ„Ξ·Ο„Ξ± ΞΊΞ±ΞΈΞ·Ξ³Ξ·Ο„ΟΞ½");
 		}
 	}
 
