@@ -133,7 +133,7 @@ public class Main {
 					covid_del = scanner_int.nextInt(); 
 					if (covid_del > 4999 || covid_del < 1000) {
 						System.out.println("Τα ID των μαθητών ξεκινάνε από το 1000 και φτάνουν ως το 4999.");
-						System.out.println("ID δημοτικού: 1000-1999\nID γυμνασίου: 2000-2999\nID λυκείου: 3000-3999\\nID καθηγητών: 4000-4999"");
+						System.out.println("ID δημοτικού: 1000-1999\nID γυμνασίου: 2000-2999\nID λυκείου: 3000-3999\\nID καθηγητών: 4000-4999");
 					}
 				} while (covid_del > 4999 || covid_del < 1000);
 				if (covid_del >= 1000 && covid_del <= 1999) {
